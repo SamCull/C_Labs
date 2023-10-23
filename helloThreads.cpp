@@ -1,3 +1,5 @@
+#Sam Cullen
+#Conc dev 2023
 #include "Semaphore.h"
 #include <iostream>
 #include <thread>
@@ -11,7 +13,7 @@ void taskOne(std::shared_ptr<Semaphore> theSemaphore, int delay){
   std::cout << "print ";
   std::cout << "first"<<std::endl;
   //tell taskTwo to start now
-  taskTwo->start();
+ theSemaphore->Signal;
  
 }
 
@@ -38,9 +40,7 @@ int main(void){
   std::cout << "Launched from the main\n";
    /**< Wait for the threads to finish */
   threadOne.join();
-  sleep(taskOneDelay);
   threadTwo.join();
-  sleep(taskTwoDelay);
   return 0;
 }
 
