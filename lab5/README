@@ -1,10 +1,17 @@
-The README file is a text file that explains what a project is.
-It should contain information on
+# CDDLabs 
 
-1. Project Licence
-2. Authors of Project
-3. How to install project
-4. List of any required Libraries, platform issues, etc.
-5. TO DO section listing items that need to be completed (errors, missing features etc.)
-6. List of files and what they contain
-7. Any other relevent information
+### Author
+Sam Cullen
+## Description
+The purpose of this repository is to demonstrate labs for Distributed and Concurrent Device Development
+
+Each lab will have it's own README.md file where the contents of each lab will be explained.
+
+## List of Files and Contents
+- main.cpp: Main function file showing a reusable barrier in action.
+- Semaphore.h: Header file for the Semaphore class.
+- Semaphore.cpp: Implementation file for the Semaphore class.
+- Makefile: File showing how to run code
+
+## Project License:
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
