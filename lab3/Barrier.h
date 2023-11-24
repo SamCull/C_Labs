@@ -11,20 +11,18 @@
 class Barrier
 {
 private:
-
-    int count;
-    int threadNum;
-    bool condition;
-    std::shared_ptr<Semaphore> theMutex;
-    std::shared_ptr<Semaphore> innerLock;
-    std::shared_ptr<Semaphore> outerLock;
-
+  int count;
+  int threadNum;
+  bool condition;
+  std::shared_ptr<Semaphore> theMutex;
+  std::shared_ptr<Semaphore> innerLock;
+  std::shared_ptr<Semaphore> outerLock;
 
 public:
-
-    virtual ~Barrier();
-    Barrier(int count);
-    void setCount(int count);
-    int getCount();
-    void waitForAll();
+  Barrier();
+  ~Barrier();
+  Barrier(int countOfThreads);
+  void setCount(int count);
+  int getCount();
+  void waitForAll();
 };
