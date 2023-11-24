@@ -1,12 +1,12 @@
 # Sam Cullen
 # C00250093
-CC=g++
-CPPFILES=Event.cpp SafeBuffer.cpp main.cpp Semaphore.cpp
-HFILES=Event.h SafeBuffer.h Semaphore.h
-OBJFILES=Event.o SafeBuffer.o main.o Semaphore.o
-CFLAGS= -std=c++11 -pthread -I. -Wall
-EXE=safeBuffer
 
+CC=g++
+CPPFILES=main.cpp Semaphore.cpp
+HFILES=Semaphore.h
+OBJFILES=main.o Semaphore.o
+CFLAGS= -std=c++11 -pthread -I. -Wall
+EXE=philosophers
 
 %.o: %.cpp
 	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
