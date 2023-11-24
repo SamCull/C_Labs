@@ -7,7 +7,7 @@ The purpose of this repository is to demonstrate labs for Distributed and Concur
 
 Each lab will have it's own README.md file where the contents of each lab will be explained.
 
-## List of Files and CCntents
+## List of Files and Contents
 - main.cpp -  Main function file showing a reusable barrier in action.
 - Semaphore.h - Header file for the Semaphore class.
 - Semaphore.cpp - Implementation file for the Semaphore class.
